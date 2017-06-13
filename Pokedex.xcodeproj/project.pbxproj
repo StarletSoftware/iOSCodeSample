@@ -54,14 +54,38 @@
 		1588B6211EEFC34800C49F8F /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				1588B6361EEFC5B800C49F8F /* views */,
+				1588B6351EEFC5AF00C49F8F /* models */,
+				1588B6341EEFC5A200C49F8F /* controllers */,
 				1588B6221EEFC34800C49F8F /* AppDelegate.swift */,
-				1588B6241EEFC34800C49F8F /* ViewController.swift */,
 				1588B6261EEFC34800C49F8F /* Main.storyboard */,
 				1588B6291EEFC34800C49F8F /* Assets.xcassets */,
 				1588B62B1EEFC34800C49F8F /* LaunchScreen.storyboard */,
 				1588B62E1EEFC34800C49F8F /* Info.plist */,
 			);
 			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		1588B6341EEFC5A200C49F8F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1588B6241EEFC34800C49F8F /* ViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		1588B6351EEFC5AF00C49F8F /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		1588B6361EEFC5B800C49F8F /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
