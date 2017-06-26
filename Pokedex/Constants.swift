@@ -8,12 +8,16 @@
 
 import Foundation
 
-
-let URL_BASE = "http://pokeapi.co/api/v1/"
+let MAIN_URL = "http://pokeapi.co"
+let URL_BASE = "\(MAIN_URL)/api/v1/"
 let URL_POKEMON = "pokemon/"
 
 func getPokemonURL(_ id : Int) -> String {
         return "\(URL_BASE)pokemon/\(id)/"
+}
+
+func getUrl() -> String {
+    return MAIN_URL
 }
 
 

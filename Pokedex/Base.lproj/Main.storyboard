@@ -399,22 +399,26 @@
                                     <constraint firstItem="COi-ww-syo" firstAttribute="leading" secondItem="OL2-T5-RSw" secondAttribute="leading" id="qDA-xJ-FTn"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vxk-Hf-FVr">
-                                <rect key="frame" x="60" y="539" width="255" height="120"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vxk-Hf-FVr">
+                                <rect key="frame" x="31" y="539" width="313" height="120"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="kf9-Ut-b0m">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kf9-Ut-b0m">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="120"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="4tq-dS-QdT">
-                                        <rect key="frame" x="135" y="0.0" width="120" height="120"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4tq-dS-QdT">
+                                        <rect key="frame" x="164" y="0.0" width="149" height="120"/>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="uPQ-fB-Tvg"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rUQ-CC-wEs" firstAttribute="top" secondItem="flg-4x-4lR" secondAttribute="top" id="3SI-9q-H9q"/>
                             <constraint firstAttribute="trailing" secondItem="rUQ-CC-wEs" secondAttribute="trailing" id="5eZ-YH-amP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vxk-Hf-FVr" secondAttribute="trailing" constant="15" id="JaL-oi-qDD"/>
                             <constraint firstItem="vxk-Hf-FVr" firstAttribute="centerX" secondItem="flg-4x-4lR" secondAttribute="centerX" id="SZd-cr-ucK"/>
                             <constraint firstItem="rUQ-CC-wEs" firstAttribute="leading" secondItem="flg-4x-4lR" secondAttribute="leading" id="ZQc-Bn-ycD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LLw-FR-VXR" secondAttribute="trailing" id="aCZ-Be-pOe"/>
@@ -424,6 +428,7 @@
                             <constraint firstAttribute="trailing" secondItem="OL2-T5-RSw" secondAttribute="trailing" id="lZ9-kh-9ID"/>
                             <constraint firstItem="OL2-T5-RSw" firstAttribute="leading" secondItem="flg-4x-4lR" secondAttribute="leading" id="mak-mZ-Thj"/>
                             <constraint firstItem="e7B-1L-B2s" firstAttribute="top" secondItem="vxk-Hf-FVr" secondAttribute="bottom" constant="8" id="oTR-cR-vuT"/>
+                            <constraint firstItem="vxk-Hf-FVr" firstAttribute="leading" secondItem="flg-4x-4lR" secondAttribute="leadingMargin" constant="15" id="wIi-oh-m1b"/>
                         </constraints>
                     </view>
                     <connections>
@@ -448,7 +453,6 @@
     </scenes>
     <resources>
         <image name="2" width="120" height="120"/>
-        <image name="3" width="120" height="120"/>
         <image name="4" width="120" height="120"/>
         <image name="back" width="100" height="67"/>
         <image name="bg" width="1920" height="1200"/>

@@ -28,6 +28,11 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = pokemon.name
+        pokedexIDLabel.text = "\(pokemon.pokedexID)"
+        
+        let image = UIImage(named: "\(pokemon.pokedexID)")
+        mainImg.image = image
+        currentEvoImg.image = image
         
         pokemon.downloadPokemonDetail {
             self.updateUI()
@@ -39,6 +44,19 @@ class DetailVC: UIViewController {
         baseAttackLabel.text = pokemon.baseAttack
         weightLabel.text = pokemon.weight
         heightLabel.text = pokemon.height
+        typeLabel.text = pokemon.type
+        descriptionLabel.text = pokemon.description
+        
+        if pokemon.nextEvoID == "" {
+            evoLabel.text = "No Evolutions"
+            nextEvoImg.isHidden = true
+        } else {
+            nextEvoImg.isHidden = false
+            print(pokemon.nextEvoID)
+            nextEvoImg.image = UIImage(named: pokemon.nextEvoID)
+            let str = "Next Evolution: \(pokemon.nextEvoName) - LVL \(pokemon.nextEvoLevel)"
+            evoLabel.text = str
+        }
     }
 
     @IBAction func backBtnPressed(_ sender: UIButton) {
